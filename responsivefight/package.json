@@ -1,0 +1,40 @@
+{
+  "name": "responsivefight",
+  "version": "1.0.0",
+  "description": "responsive website for a game",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "node_modules/.bin/cypress run --browser chrome --headless",
+    "local": "node_modules/.bin/cypress open --browser chrome",
+    "dashboard": "node_modules/.bin/cypress run --record --key $CYPRESS_KEY --browser chrome --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ale-sanchez-g/responsivefight.git"
+  },
+  "author": "Alejandro Sanchez-Giraldo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "caniuse-lite": "^1.0.30001312",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "heroku": "^7.33.3",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "request": "^2.88.2",
+    "static-favicon": "~1.0.0"
+  },
+  "engines": {
+    "node": "17.x"
+  },
+  "bugs": {
+    "url": "https://github.com/ale-sanchez-g/responsivefight/issues"
+  },
+  "homepage": "https://github.com/ale-sanchez-g/responsivefight#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  }
+}

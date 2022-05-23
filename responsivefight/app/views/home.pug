@@ -1,0 +1,84 @@
+include meta
+
+div.anime.block
+    h1
+        p.option-label(style="font-size:5vw;") 
+            | <i style="font-size:5vw;" class="material-icons" >&#xe003;</i> COVID-19 THE GAME <i style="font-size:5vw;" class="material-icons">&#xe003;</i>
+    
+div.block
+row
+    div.col-sm-12.col-md-offset-1.d-none.d-md-block.col-md-10.col.col-lg-10
+        div.block.border
+            p
+                | The world has been taken over by super villain COVID19 and we need our super heroes to come to the rescue.
+                | We need to combat this great threat, so I am looking to recruit a team of Super Heroes and build the CURE team.
+                | I am in search of heroes like The HandWasher, Invisible Distance, SOAP, WFH, and any other great warriors against COVID19, until CURE arrives to the rescue.
+
+row
+    div.col-sm-12.col-md-offset-1.d-none.d-md-block.col-md-10.col.col-lg-10
+        div.block
+            .carousel.slide(data-ride="carousel" data-interval="3500")
+                div.carousel-inner
+                    .item.active
+                        img.centered.responsive(src="/img/gamePrinciple.png" alt="WHO announcement")
+
+row 
+    div.col-sm-12.col-md-offset-1.d-none.d-md-block.col-md-10.col.col-lg-10
+        div.block
+            a.btn(id="rego" style="background-color: #81a5db;")  Register
+            p
+            a.btn(id="login" style="background-color: #11a5db;")  Login
+            div.modal(id="regomodal")
+                div.modal-content
+                    div.container
+                        h1 Sign Up
+                        p
+                            | Please fill in this form to create an account.                        
+                        label(for="uname")
+                            | User Name
+                        br    
+                        input.center(style="width: 200px;" type="text" placeholder="10 Characters max" name="uname" id="uname" maxlength='10' required)
+                        p
+                        label(for="psw")
+                            | Password
+                        br    
+                        input.center(style="width: 200px;" type="password" placeholder="Enter Password" name="psw" id="pwd" required)
+                        p
+                        label(for="psw-repeat")
+                            | Repeat Password
+                        br    
+                        input.center(style="width: 200px;" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required)
+                        p
+                        span(id="popup" style="background-color: red; text-align:center; width: 90%; display:none;")
+                            | Passwords do not match
+
+                        div.clearfix
+                            <button style="width: 250px;" type="button" onclick="document.getElementById('regomodal').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button style="width: 250px;" type="submit" class="signupbtn" id="signupbtn">Sign Up</button>
+
+            div.modal(id="loginmodal")
+                    div.modal-content
+                        div.container
+                            h1 Login with your warrior name
+                            br
+                            label(for="uname" id="unamelabel")
+                                | User Name
+                            br 
+                            input.center(id="worrior_username" type="text" style="text-align:center; width: 50%" maxlength='10')
+                            br
+                            label(for="pwd" id="pwdlabel")
+                                | Password
+                            br 
+                            input.center(id="worrior_pwd" type="password" style="text-align:center; width: 50%" maxlength='10')                        
+                            br
+                            span(id="login_popup" style="background-color: red; text-align:center; width: 90%; display:none;") 
+                            p
+                            a.btn(style="background-color: #81a5db; width: 90%;" id="warrior") Login warrior
+                            a.btn(href="covid" style="background-color: #d54ff0; width: 90%; display: none" id="start") Start your journey
+                            br        
+                            a.btn(style="background-color: red; width: 90%;" id="close") Cancel
+            p
+            p.summary
+                | Please visit <a href="https://github.com/users/ale-sanchez-g/projects/1">this project</a> for more information
+            
+script(type="application/javascript", src="scripts/home.js")
