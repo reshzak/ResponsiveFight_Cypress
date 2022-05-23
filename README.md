@@ -23,7 +23,8 @@ Download this repo and run the below scripts:
 
 1. Generate package.json file using: npm init
 2. Install cypress : npm install cypress --save-dev 
-3. Open the cypress test runner: node_modules/.bin/cypress open
+3. Open the cypress test runner  : node_modules/.bin/cypress open
+and choose the test suite to be run by clicking on the test suite
 or 
-run the cypress test directly : ./node_modules/.bin/cypress run --headed
+run all the tests in the cypress test directly in headed mode : ./node_modules/.bin/cypress run --headed
   
