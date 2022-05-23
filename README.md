@@ -16,4 +16,14 @@ The cypress regression test cases are included to cover the following scenarios:
         Complete the challenges successfully and navigate to the leaderboard.
 5. RegressionAllBattlesWrong suite contains test cases to:
         Exit teh challange by choosing a wronhg answer choice.
+        
+        
+To Run the test:
+Download this repo and run the below scripts:
+
+1. Generate package.json file using: npm init
+2. Install cypress : npm install cypress --save-dev 
+3. Open the cypress test runner: node_modules/.bin/cypress open
+or 
+run the cypress test directly : ./node_modules/.bin/cypress run --headed
   
